@@ -1,0 +1,10 @@
+#!/bin/bash
+
+node test 2> logfile
+
+filename="logfile"
+
+while read -r line
+do
+    echo $line
+done < $filename
